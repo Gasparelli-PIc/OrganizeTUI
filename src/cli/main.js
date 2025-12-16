@@ -1,7 +1,7 @@
 import { select } from '@inquirer/prompts';
-import { listFilesInDirectory } from '../func/ListFiles.js';
-import { selectFolder } from '../func/win/selectFolder.js';
-import { backToMenu } from '../func/backToMenu.js';
+import { listFilesInDirectory } from '../services/ListFiles.js';
+import { selectFolder } from '../win/selectFolder.js';
+import { backToMenu } from '../utils/backToMenu.js';
 
 let pathdirectory;
 
