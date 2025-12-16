@@ -1,7 +1,7 @@
-import { execSync } from 'child_process';
+import { execSync } from "child_process";
 
 export function selectFolder() {
-    const psCommand = `
+  const psCommand = `
   [Console]::OutputEncoding = [System.Text.Encoding]::UTF8;
   Add-Type -AssemblyName System.Windows.Forms;
   $dialog = New-Object System.Windows.Forms.FolderBrowserDialog;
@@ -11,15 +11,15 @@ export function selectFolder() {
   }
   `;
 
-    try {
-        const result = execSync(
-            `powershell -STA -NoProfile -Command "${psCommand.replace(/\r?\n/g, ' ')}"`,
-            { encoding: 'utf8' }
-        ).trim();
+  try {
+    const result = execSync(
+      `powershell -STA -NoProfile -Command "${psCommand.replace(/\r?\n/g, " ")}"`,
+      { encoding: "utf8" },
+    ).trim();
 
-        return result || null;
-    } catch (error) {
-        console.error('Error selecting folder:', error);
-        return null;
-    }
+    return result || null;
+  } catch (error) {
+    console.error("Error selecting folder:", error);
+    return null;
+  }
 }
