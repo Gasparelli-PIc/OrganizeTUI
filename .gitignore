@@ -141,8 +141,6 @@ vite.config.ts.timestamp-*
 # vscode
 /.vscode/
 
-# prettier
-.prettierrc
-.prettierignore
+
 
 

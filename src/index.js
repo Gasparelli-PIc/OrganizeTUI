@@ -1,7 +1,7 @@
-import { main } from "./cli/main.js";
+import { main } from './cli/main.js';
 
 try {
-  main();
+    main();
 } catch (error) {
-  console.error("Error:", error);
+    console.error('Error:', error);
 }
