@@ -51,8 +51,7 @@ export const main = async () => {
 
             const selectedFolder = selectFolder();
 
-            pathdirectory =
-                selectedFolder === null ? pathdirectory : selectedFolder;
+            pathdirectory = selectedFolder === null ? pathdirectory : selectedFolder;
 
             console.log('Selected directory:', pathdirectory);
 
@@ -60,7 +59,6 @@ export const main = async () => {
             await backToMenu();
             break;
         }
-
         case 'exit':
             console.log('Exiting...');
             console.clear();
